@@ -62,15 +62,15 @@ public class SkillsController {
         favorites.add(favorite3);
         String html = "<html>" + "<title>Skill Tracker</title>" + "<body>" +
                 "<h1>" + name + "</h1>" +
-                "<table>" +
+                "<table style='border:1px solid black'>" +
                 "<tr>" +
-                "<th>My favorite language</th>" +
-                "<th>My second favorite language</th>" +
-                "<th>My third favorite language</th>" +
+                "<th style='border:1px solid black'>My favorite language</th>" +
+                "<th style='border:1px solid black'>My second favorite language</th>" +
+                "<th style='border:1px solid black'>My third favorite language</th>" +
                 "</tr>" +
                 "<tr>";
         for (String fav : favorites) {
-            html += "<td>" + fav + "</td>";
+            html += "<td style='border:1px solid black'>" + fav + "</td>";
         }
         html += "</tr></table></body></html>";
         return html;
